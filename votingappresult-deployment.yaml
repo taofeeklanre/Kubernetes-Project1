@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voting-app-result-deployment
+  labels:
+    name: voting-app-result-deployment
+    type: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: voting-app-result-pod
+      type: frontend
+  template:
+    metadata:
+      name: voting-app-result-pod
+      labels:
+        name: voting-app-result-pod
+        type: frontend
+    spec:
+      containers:
+        - name: voting-app-result
+          image: lanre99/votingappresult:v2
