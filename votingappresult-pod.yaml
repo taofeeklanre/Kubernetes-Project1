@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: votingappresult-pod
+  labels:
+    name: votingapp-pod
+    type: frontend
+spec:
+  containers:
+    - name: votingapp
+      image: lanre99/votingappresult:v2
