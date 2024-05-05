@@ -21,9 +21,5 @@ spec:
       containers:
       - name: worker-container
         image: lanre99/votingworkers:v2
-        resources:
-           limits:
-            memory: "128Mi"
-            cpu: "500m"
-         
+       
       
