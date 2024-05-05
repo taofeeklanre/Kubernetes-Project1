@@ -9,5 +9,12 @@ spec:
   containers:
     - name: votingapp
       image: lanre99/votingapp:v2
+      resources:
+           limits:
+            memory: "128Mi"
+            cpu: "500m"
+         
       ports:
         - containerPort: 80
+
+         
