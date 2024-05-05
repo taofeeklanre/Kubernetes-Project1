@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: votingappresult-pod
   labels:
-    name: votingapp-pod
+    name: votingappresult-pod
     type: frontend
 spec:
   containers:
-    - name: votingapp
+    - name: votingappresult
       image: lanre99/votingappresult:v2
