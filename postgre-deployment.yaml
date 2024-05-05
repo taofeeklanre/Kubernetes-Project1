@@ -17,11 +17,11 @@ spec:
      labels:
       name: postgres-pod
       type: backend
-  spec:
-   containers:
-    - name: postgres-container
-      image: postgres:13.14-bullseye
-      resources:
+    spec:
+      containers:
+       - name: postgres-container
+         image: postgres
+         resources:
            limits:
             memory: "128Mi"
             cpu: "500m"
