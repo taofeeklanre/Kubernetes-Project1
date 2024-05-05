@@ -21,3 +21,5 @@ spec:
       containers:
         - name: voting-app
           image: lanre99/votingapp:v2
+          ports:
+            - containerPort: 80
