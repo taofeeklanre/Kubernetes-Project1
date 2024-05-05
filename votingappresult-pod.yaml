@@ -9,3 +9,5 @@ spec:
   containers:
     - name: votingappresult
       image: lanre99/votingappresult:v2
+      ports:
+        - containerPort: 80
