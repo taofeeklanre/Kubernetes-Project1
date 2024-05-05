@@ -20,7 +20,7 @@ spec:
   spec:
    containers:
     - name: postgres-container
-      image: postgres
+      image: postgres:13.14-bullseye
       resources:
            limits:
             memory: "128Mi"
