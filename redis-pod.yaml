@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redisapp-pod
+  labels:
+    name: redisapp-pod
+    type: backend
+spec:
+  containers:
+    - name: redisapp
+      image: redis:latest
+      ports:
+        - containerPort: 6379
