@@ -6,7 +6,7 @@ metadata:
     name: voting-app-service
     type: frontend
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     name: voting-app-pod
     type: frontend
